@@ -38,8 +38,6 @@ int main()
     {
         char buffer[MAX_SIZE];
 
-        printf("Servidor esperando...\n");
-
         client_len = sizeof(client_address);
 
         ssize_t receiveResult = recvfrom(server_sockfd, &buffer, sizeof(buffer), 0, (struct sockaddr *)&client_address, &client_len);
